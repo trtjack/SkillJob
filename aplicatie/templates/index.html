@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillJob</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Partea de sus (Header) */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            border-bottom: 1px solid #000;
+            padding: 0 20px;
+        }
+
+        .logo {
+            width: 200px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .search-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-container input {
+            width: 300px;
+            padding: 8px 15px; /* Am mărit puțin padding-ul pentru a arăta bine cu marginile rotunjite */
+            border: 1px solid #000;
+            border-radius: 20px; /* Colțuri mult mai rotunjite pentru bara de search */
+        }
+
+        /* Spațiator gol pentru a păstra bara de search perfect în mijloc */
+        .header-spacer {
+            width: 200px;
+        }
+
+        /* Containerul de jos (Panouri) */
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Panoul lateral stânga */
+        .left-panel {
+            width: 200px;
+            border-right: 1px solid #000;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .left-panel button {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 10px; /* Colțuri rotunjite pentru butoane */
+            background-color: transparent; /* Păstrăm designul simplu */
+        }
+
+        /* Panoul central gol */
+        .center-panel {
+            flex: 1;
+        }
+
+        /* Panoul lateral dreapta gol */
+        .right-panel {
+            width: 200px;
+            border-left: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SkillJob</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="header-spacer"></div>
+    </header>
+
+    <div class="main-content">
+        <div class="left-panel">
+            <button>Ocupatii</button>
+            <button>Skill-uri</button>
+        </div>
+
+        <div class="center-panel"></div>
+
+        <div class="right-panel"></div>
+    </div>
+
+</body>
+</html>
